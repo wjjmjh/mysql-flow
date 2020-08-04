@@ -6,4 +6,4 @@ src/*.egg-info
 .idea/*
 
 # labs
-/src/mysql-flow/labs/*
+/src/mysql_flow/labs/*

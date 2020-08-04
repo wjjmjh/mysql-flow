@@ -1,4 +1,4 @@
-name: mysql-flow
+name: mysql_flow
 channels:
   - conda-forge
   - defaults

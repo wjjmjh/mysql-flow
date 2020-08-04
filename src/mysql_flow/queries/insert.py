@@ -35,7 +35,7 @@ def insert_query(columns_specified=True, **kwargs):
         return _without_columns(kwargs["table"], kwargs["values"])
 
 
-def multipe_insert_query(if_specify_columns=True, **kwargs):
+def multipe_insert_query(columns_specified=True, **kwargs):
     """
     kwargs["rows"] could be a two dimensional array
     """
@@ -43,7 +43,7 @@ def multipe_insert_query(if_specify_columns=True, **kwargs):
     values = ", ".join(
         ["({})".format(", ".join([wrap(ele) for ele in row])) for row in rows]
     )
-    if if_specify_columns:
+    if columns_specified:
         return _with_columns(
             kwargs["table"], kwargs["columns"], values, single_query=False
         )

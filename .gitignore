@@ -1,0 +1,9 @@
+# packages
+src/*.egg
+src/*.egg-info
+
+# IDE stuff
+.idea/*
+
+# labs
+/src/mysql-flow/labs/*
